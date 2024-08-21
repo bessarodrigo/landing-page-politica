@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vereador da Cidade - Coleta de Solicitações</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Vereador da Cidade</h1>
+            <p>Comprometido com a melhoria da sua comunidade</p>
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="container">
+            <h2>Estamos aqui para ouvir você</h2>
+            <p>Envie suas solicitações, sugestões e preocupações. Estamos aqui para ajudar a melhorar nossa cidade juntos.</p>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <div class="container">
+            <form id="main-form" action="#" method="post">
+                <!-- Página 1: Informações Pessoais -->
+                <div class="form-page" id="page-1">
+                    <h2>Informações Pessoais</h2>
+                    <label for="data-solicitacao">Data da Solicitação:</label>
+                    <input type="date" id="data-solicitacao" name="data-solicitacao" required>
+                    
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                    
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" placeholder="Seu endereço" required>
+                    
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" id="bairro" name="bairro" placeholder="Seu bairro" required>
+                    
+                    <label for="data-aniversario">Data de Aniversário:</label>
+                    <input type="date" id="data-aniversario" name="data-aniversario" required>
+                    
+                    <label for="telefone">Número de Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="Seu número de telefone" required>
+                    
+                    <button type="button" id="next-1">Próximo</button>
+                </div>
+
+                <!-- Página 2: Situação Profissional -->
+                <div class="form-page" id="page-2">
+                    <h2>Situação Profissional</h2>
+                    <label for="situacao-profissional">Situação Profissional Atual:</label>
+                    <input type="text" id="situacao-profissional" name="situacao-profissional" placeholder="Sua situação profissional atual" required>
+                    
+                    <label for="ocupacao">Ocupação/Profissão:</label>
+                    <input type="text" id="ocupacao" name="ocupacao" placeholder="Sua ocupação ou profissão" required>
+
+                    <button type="button" id="prev-2">Anterior</button>
+                    <button type="button" id="next-2">Próximo</button>
+                </div>
+
+                <!-- Página 3: Solicitação -->
+                <div class="form-page" id="page-3">
+                    <h2>Solicitação</h2>
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" id="assunto" name="assunto" placeholder="Assunto da solicitação" required>
+                    
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="6" placeholder="Detalhe sua solicitação aqui" required></textarea>
+                    
+                    <label for="motivo">Motivo:</label>
+                    <select id="motivo" name="motivo" required>
+                        <option value="">Escolha o motivo</option>
+                        <!-- Adicione opções de motivo aqui -->
+                        <option value="Motivo1">Motivo 1</option>
+                        <option value="Motivo2">Motivo 2</option>
+                    </select>
+                    
+                    <label for="status">Status:</label>
+                    <select id="status" name="status" required>
+                        <option value="">Escolha o status</option>
+                        <!-- Adicione opções de status aqui -->
+                        <option value="Pendentes">Pendente</option>
+                        <option value="Concluída">Concluída</option>
+                    </select>
+                    
+                    <button type="button" id="prev-3">Anterior</button>
+                    <button type="submit">Enviar Solicitação</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="areas-atuacao">
+        <div class="container">
+            <h2>Principais Áreas de Atuação</h2>
+            <div class="area">
+                <h3>Educação</h3>
+                <p>Trabalhamos para melhorar a qualidade da educação em nossa cidade, com novas escolas e programas de apoio.</p>
+            </div>
+            <div class="area">
+                <h3>Saúde</h3>
+                <p>Nosso compromisso é garantir acesso à saúde de qualidade para todos os moradores, com foco na prevenção e atendimento humanizado.</p>
+            </div>
+            <div class="area">
+                <h3>Infraestrutura</h3>
+                <p>Buscamos melhorias constantes na infraestrutura urbana, como pavimentação de ruas e revitalização de espaços públicos.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Vereador da Cidade. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
