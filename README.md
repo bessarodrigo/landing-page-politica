@@ -1,4 +1,4 @@
-# Landing Page para Vereador
+# Landing Page para Política
 
 Esta é uma Landing Page simples desenvolvida para um vereador que deseja coletar solicitações dos moradores da cidade.
 
